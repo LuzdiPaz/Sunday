@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang=es>
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Prof. Adrián</title>
+</head>
+
+<body>
+	<h2>Creación de tablas en HTML con el Prof. Adrián</h2>
+	<div class="uno">
+		<h3>Ejercicio 1</h3>
+		<!-- Declaración de la tabla = El contenedor-->
+			<table class="tablita">
+		<!-- Atributo para el título/descripción de la tabla -->
+			<caption>Calendario de Actividades Octubre 2017</caption> <!-- La posición de este atributo siempre será arriba de la tabla, pero si se coloca antes del contenedor, no se reconocerá como atributo de la tabla -->
+		<!-- Títulos de las celdas/columnas -->
+				<tr>
+					<th scope="row">Día</th> <!-- El atributo SCOPE (row o column) indica explícitamente a qué celdas afecta una celda de encabezado -->
+				 	<th>Lunes</th>
+					<th>Martes</th>
+					<th>Miércoles</th>
+					<th>Jueves</th>
+					<th>Viernes</th>
+				</tr>
+		<!-- Contenido de la tabla -->
+		<!-- th = TITLE = nombre -->
+		<!-- tr = ROW   = filas  -->
+		<!-- td = DATA  = celda  -->
+				 <tr>
+					<th>Semana 1</th>
+					 	<td>Arte</td>
+					 	<td>Diseño</td>
+					 	<td>---</td>
+					 	<td>Lectura</td>
+					 	<td>Baile</td>
+				 </tr>
+				 <tr>
+					<th>Semana 2</th>
+					 	<td>---</td>
+					 	<td>Lectura</td>
+					 	<td>Arte</td>
+					 	<td>Baile</td>
+					 	<td>Diseño</td>
+				 </tr>
+				 <tr>
+					<th>Semana 3</th>
+					 	<td>Baile</td>
+					 	<td>Lectura</td>
+					 	<td>Arte</td>
+					 	<td>---</td>
+					 	<td>Diseño</td>
+				 </tr>				 
+				 <tr>
+					<th>Semana 4</th>
+					 	<td>Diseño</td>
+					 	<td>Lectura</td>
+					 	<td>Baile</td>
+					 	<td>Arte</td>
+					 	<td>---</td>
+				 </tr>
+			</table>
+	</div>
+
+		<!-- Unificación-->
+		<!-- colspan = horizontal                  -->
+		<!-- rowspan = vertical                    -->
+		<!-- #       = cantidad de celdas/columnas -->	
+	<div class="dos">
+		<h3>Ejercicio 2</h3>
+			<table class="tablita">
+			<caption>Profesores</caption> 
+				<tr>
+					<th scope="col">Actividad</th>
+					<td>Prof. Luis</td>
+					<td>Prof. Adrián</td>
+					<td>Prof. Jazmin</td>
+					<td>Prof. Fernanda</td>
+				</tr>
+				<tr>
+					<th>Diseño</th>
+					<td colspan="2">X</td>
+					<td></td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Lectura</th>
+					<td></td>
+					<td></td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Arte</th>
+					<td>X</td>
+					<td>X</td>
+					<td rowspan="2">X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Baile</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>												
+			</table>
+	</div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,68 @@
+/* Tipografías */
+@import url('https://fonts.googleapis.com/css?family=Modak');
+
+*{
+	padding: 0; /*Espacio entre los bloques hacía adentro*/ 
+	margin: 0; /*Espacio entre los bloques hacía a fuera*/
+	box-sizing: border-box; /*Para hacer los padings internos */
+}
+html {
+	height: 100%; /*alto */
+	width: 100%; /*largo */
+}
+body {
+	font-family: 'Modak', cursive;
+}
+img {
+	max-width: 100%; /* Para cualquier elemento */
+	display: block; /* Quita el margen default html, agrupa las imágenes en bloques verticales */
+}
+a, a:link, a:hover, a:visited { /* Anchor = link interno o externo, y con lo siguiente, le quitamos la configuración default */
+	text-decoration: none !important;
+	color: inherit !important;
+/* webkit transition : es la animación o transición del elemento */;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+/* la clase, es el nombre del elemento que vamos a configurar y puede ser con . o # , el . es n veces, el # (id) 1 sola vez */
+.btngral {
+	background: pink;
+	padding: 8px;
+	display: inline-block; /* lo adecua al tamaño del contenido y el contenedor */
+}
+.btngral:hover {
+	background: red;
+	color: white !important;
+}	
+.btnsnd {
+	display: block;
+	padding: 8px 15px;
+	width: 250px;
+}
+.boton1 {
+	background: red;
+	font-family: 'Modak', cursive;
+}
+.boton2 {
+	background: rgba(0, 0, 0, 0.2);
+}
+.boton3 {
+	border: 3px solid pink;
+}
+/*Contenedor general*/
+.contenedor {
+	width: 100%;
+	height: 2000px;
+	background: green;
+}
+.header {
+	position: fixed;
+	width: 100%;
+	padding: 15px 0px;
+	top: 0px;
+	left: 0px;
+	background: pink;
+}
